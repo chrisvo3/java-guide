@@ -5,6 +5,9 @@
 
 ## Single Responsibility Principle (SPR)
 
+> A class, module or function should only have one sole responsibility
+
+
 It is important to keep every software entitiy (module, class, or function) focused on a single concern or functionality.
 
 
@@ -39,9 +42,9 @@ Each method has its own goal, that doesn't affect other methods within the class
 In order to do more with `Student`, we can create other classes such as `Login` or `ExportLog`
 
 
-## Open-Closed Principle
+## Open-Closed Principle (OCP)
  
-> 
+> You can expand a module, but you cannot modify within the module (open for extension by closed for modification)
 
 Software entities (modules, classes, functions) should be open for extension, but closed for modificaiton.
 One should be able to add new functionality without changing the existing code.
@@ -120,3 +123,81 @@ We have `Animal` interface that can `eat`, `drink`, and `sleep`.
 
 When we want to add few more animals with ability to `swim`, `fly`, and `hunt`. Our interface would be expand bigger.
 Therefore, it wouldn't be a good idea. Instead, we will have `AnotherAnimal` that will `implement` the interface. 
+
+```
+interface Animal {
+	void eat();
+	void drink();
+	void sleep();
+}
+
+interface Bird {
+	void fly();
+}
+
+class Eagle implements Animal, {
+	public void eat() {}
+	public void drink () {}
+	public void sleep() {}
+	public void fly() {}
+}
+```
+
+
+## Dependency Inversion Principle (DIP)
+
+> 1. High level modules shouldn't depend on lower level modules. Both modules should depend on abstraction.
+> 2. Interface (abstraction) should not depend on details, but the opposite. Classes should interact with one another through interface, not through implementation.
+
+High level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. To achieve this, introduce abstraction that decouples the high level and low level modules from each other.
+
+__Example__
+
+This is an example from __toidicodedao__ The code below is designed to use DIP:
+
+
+Interface
+
+```
+public interface Datbase { void save(int orderId); }
+public interface Logger { void logInfo(String info); }
+public interface EmailSender { void sendEmail(int userId); }
+```
+
+
+Modules implement Interfaces
+
+
+```
+public class Logger implement Logger {
+	public void logInfo(String info) {}
+}
+
+public class Database inplement Database {
+	public void save(int orderId) {}
+}
+
+public class EmailSender implement EmailSender {
+	public void sendEmail(int userId) {}
+}
+```
+
+
+Check out:
+
+```
+public class Cart {
+	public void checkOut(Integer orderId, Integer userId) {
+
+		// Database, Logger, EmailSender is lower module
+		Database db = new Database();
+		db.save(orderId);
+
+		Logger log = new Logger();
+		log.logInfo("Order ha sbeen check out");
+
+		EmailSender es = new EmailSender();
+		es.sendEmail(userId);
+	}
+}
+```
