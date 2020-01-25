@@ -46,7 +46,10 @@ public class Deer extends Animal implement Vegetarian {}
 
 ## Inheritance 
 
-Is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
+> Is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
+
+Inheritance is a technique that prevents code duplication by inheriting functionality from parent objects. 
+
 
 __Important terminology:__
 
@@ -54,6 +57,19 @@ __Important terminology:__
 * Sub Class: The class that inherits the other class is known as sub class(or aderived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
 
 
+__Example__
+
+A `Party` class could extend an `Arraylist` to provide functionality for a guest list. This would allow `Party` obejct to be used in enhanced for loops or methods that accept a `List`. Multiple inheritance is not allowed in order to prevent the ambiguity that arise when multiple parents implement the same feature independently. This ambiguity is called `The Diamond Problem` due to the shape of the resulting object hierarchy.
+
+
+
 ## Encapsulation
 
+> Encapsulation is a technique that encourages abstraction by purposefully hiding information. Java encourages encapsulation through the use of interfaces and by providing access modifiers that limit the visibilkity of classes, fields, and methods.
+
 When the variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared. Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+
+
+__Example__
+
+The mechanical details of a car engine are encapsulated behind a steering wheel and floor pedals. Anyone familiar with this interface could drive a car without knowing what type of engine was under the hood.
