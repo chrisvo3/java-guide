@@ -5,12 +5,43 @@
 
 ## Abstraction
 
-Selecting data from a larger pool to show only the relevant details to the object. It helps to reduce programming complexity and effort. In Java, abstraction is accomplished using Abstract classes and interfaces. 
+> Abstraction is the act of perceiving an entity from a narrow perspective. The goal of aabstraction is to reduce complexity in a software system
+
+Is selecting data from a larger pool to show only the relevant details to the object. It helps to reduce programming complexity and effort. In Java, abstraction is accomplished using Abstract classes and interfaces.
+
+
+__Example:__
+
+In a context of education, person can be reduced to a student, an instructor.
+In a context of employment, person can be reduced to an employee, owner.
+Each abstraction reduces the attributes of a person to a subset of relevant information.
+
+```
+class Person {}
+class Student implements 
+```
 
 
 ## Polymorphism
 
-Refers to a programming language's ability to process objects differently depending on their data type or class. More specifically, it is the ability to redefine methods for derived classes.
+> Refers to a programming language's ability to process objects differently depending on their data type or class. More specifically, it is the ability to redefine methods for derived classes.
+
+Polymorphism is a technique that encourages abstraction by allowing an entity to assume multiple forms. 
+Each application exposes a relevant interface to the user. 
+In Java, an object can take on the form of any parent in its hierarchy or any interface in its hierarchy.
+
+__Example__
+
+In this example, we have an interface `Vegetarian` which is only eat grass. Then we have class `Animal` with ability to `eat` and `drink` and `sleep`. The class `Deer` that is extends from `Animal` implements `Vegetarian` is polymorphism
+
+
+```
+public interface Vegetarian {}
+public class Animal {}
+public class Deer extends Animal implement Vegetarian {}
+``` 
+
+
 
 
 ## Inheritance 
