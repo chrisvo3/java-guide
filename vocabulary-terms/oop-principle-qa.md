@@ -8,6 +8,9 @@ __1.__ What is OOPS?
 
 __2.__ What is the 5 objects oriented design principle from SOLID?
 
+__3.__ Is Java a pure object oriented language? if not why?
+
+
 
 ### Answers
 
@@ -19,3 +22,5 @@ __2.__ SOLID is the term given by Uncle Bob in his classic book, the Clean Code,
 > L for Liskov substitution principle
 > I for Interface segregation principle
 > D for Dependency inversion principle
+
+__3.__ Java is not a pure object-oriented programming language e.g. there are many things you can do without objects e.g. static methods. Also, primitive variables are not objects in Java. See the answer for a more detailed explanation.
