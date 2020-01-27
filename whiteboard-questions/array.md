@@ -16,8 +16,8 @@ f(["dog", "elephant"]) = ["elephant"]
 
 __Solve__
 
-This is `O sqrt(log n)` performance, which will do poorly.
-`log n` is when we go through all 
+This is `O (log n)^2` performance, which will do poorly.
+`log n` is when we go through all items of the list
 
 ```
 String[] f(inputArray) {
