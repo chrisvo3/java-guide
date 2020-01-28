@@ -215,12 +215,17 @@ In object-oriented programming, method is a jargon used for function. Methods ar
 
 ## Arrays
 
-An array is an object that can hold afixed number of values of a single type.
+An array is an object that can hold a fixed number of values of a single type.
+
+- In Java all arrays are dynamically allocated.
+- Since arrays are objects in Java, we can find their length using member length.
+- The size of an array must be specified by an int value and not long or short.
+- The direct superclass of an array type is Object.
+- Every array type implements the interfaces Cloneable and java.io.Serializable.
 
 The capacity of an array is defined when the array is initilized, and its elements can be accessed by a zero-based index.
 
 Arrays are covariant, meaning that an array can be cast into an array of its superclass type.
-
 
 __Example__
 
@@ -230,6 +235,8 @@ A `String[]` could be cast to an `Object[]`, because the `String` class extends 
 ## Strings
 
 > String are unique objects taht are used to represent text.
+
+Strings in Java are Objects that are backed internally by a char array. Since arrays are immutable(cannot grow), Strings are immutable as well. Whenever a change to a String is made, an entirely new String is created.
 
 String values can be assigned without the use of the `new` keyword, although the compiler is actually creating `String` objects internally.
 
@@ -242,8 +249,31 @@ The immutable property of strings allows the compiler to cache them in a process
 
 ## Enums
 
-Enums, short for enumerated types, are special classes that represent a set of isngle-instance constants. Practical appplications include the days of the week, the status levels of a task, or the roles of a security group.
+> Enums, short for enumerated types, are special classes that represent a set of single-instance constants. 
+
+Enumerations serve the purpose of representing a group of named constants in a programming language.
+
+Practical appplications include the days of the week, the status levels of a task, or the roles of a security group.
 
 Enums were introduced to replace `String` and `Integer` constants and they are far more powerful because they can contain methods, implement interfaces, and provide type safety.
 
 However, enumbs cannot be subclasses or extend my class besides the implicity extended `Enum` class.
+
+```
+public class Test 
+{ 
+    enum Color 
+    { 
+        RED, GREEN, BLUE; 
+    } 
+  
+    // Driver method 
+    public static void main(String[] args) 
+    { 
+        Color c1 = Color.RED; 
+        System.out.println(c1); 
+    } 
+}
+```
+
+Read more on [GeeksforGeeks](https://www.geeksforgeeks.org/enum-in-java/)
