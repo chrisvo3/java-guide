@@ -50,3 +50,10 @@ _final_ is a non-access modifier applicable only to a variable, a method or a cl
 
 To create a `static` member(block,variable,method,nested class), precede its declaration with the keyword `static`. When a member is declared `static`, it can be accessed before any objects of its class are created, and without reference to any object.
 
+```
+static int a = 10;
+static String str = "Hello";
+public static void main(String[] args) {}
+public static int getAge(int index) {}
+```
+
