@@ -32,6 +32,7 @@ Access modifiers determine the visibility of classes, fields, and methods, so th
 - __private:__ accessible only within the class in which it is defined.
 - __default__ (declared/defined without using any modifier) : accessible within same class and package within which its class is defined.
 
+
 ## The '_final_' Keyword
 
 > The _final_ keyword determines whether an object reference can be changed after being assigned.
@@ -42,4 +43,10 @@ _final_ is a non-access modifier applicable only to a variable, a method or a cl
 - `final methods` : to prevent method overriding
 - `final classes` : to prevent inheritance
 
+
+## The '_static_' Keyword
+
+> The `static` is a non-access modifier in Java which is applicable for the following: blocks, variables, methods, nested, classes
+
+To create a `static` member(block,variable,method,nested class), precede its declaration with the keyword `static`. When a member is declared `static`, it can be accessed before any objects of its class are created, and without reference to any object.
 
