@@ -15,7 +15,7 @@ class Student {}
 
 > It is a basic unit of Object Oriented Programming and represents the real life entities.
 
-When an `object` is instantiated with the `new` keyword, the class file and all of its `superclasses` are loaded into the JVM by the system class loader. 
+When an `object` is instantiated with the `new` keyword, the class file and all of its `superclasses` are loaded into the JVM by the system class loader. Every `object` in a computer program is self-contained. Three things that describe objects are identity, attributes, and behaviors.
 
 __Example__
 ```
