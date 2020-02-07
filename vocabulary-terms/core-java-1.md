@@ -3,7 +3,8 @@
 ## Class
 
 > A `class` is a user defined blueprint or prototype from which objects are created.  
-> A `class` defines the name of an `object`, what type of state the object has in the form of fields, and what kind of behavior object has in the form of methods.
+
+A `class` defines the name of an `object`, what type of state the object has in the form of fields, and what kind of behavior object has in the form of methods.
 
 __Example__
 ```
@@ -118,84 +119,6 @@ char initial = 'n';
 > Symbol that denotes an operation to be done
 
 Java provides many types of operators which can be used according to the need. They are classified based on the functionality they provide. 
-
-#### Arithmetic Operators
-They are used to perform simple arithmetic operations on primitive data types.
-```
-a + b = 30
-a - b = 10
-x + y = ThankYou
-a * b = 200
-a / b = 2
-a % b = 0
-```
-
-#### Unary Operators
-Unary operators need only one operand. They are used to increment, decrement or negate a value.
-```
-++a
-b++
---d
-e--
-!condition
-```
-
-#### Assignment Operator
-`=` Assignment operator is used to assign a value to any variable. It has a right to left associativity, i.e value given on right hand side of operator is assigned to the variable on the left and therefore right hand side value must be declared before using it or should be a constant.
-```
-variable = literal;
-```
-
-In many cases assignment operator can be combined with other operators to build a shorter version of statement called Compound Statement.
-```
-a += 2
-b -= 1
-c *= 2
-d /= 1
-e %= 2
-```
-
-#### Relational Operator
-These operators are used to check for relations like equality, greater than, less than. They return boolean result after the comparison and are extensively used in looping statements as well as conditional if else statements.
-```
-a == b
-a < b
-a <= b
-a > b
-a >= b
-a != b
-x == y
-condition == true
-```
-
-#### Logical Operator
-These operators are used to perform “logical AND” and “logical OR” operation, i.e. the function similar to AND gate and OR gate in digital electronics. One thing to keep in mind is the second condition is not evaluated if the first one is false, i.e. it has a short-circuiting effect. Used extensively to test for several conditions for making a decision.
-```
-&& is logical AND
-|| is logical OR
-```
-
-#### Ternary Operator
-Ternary operator is a shorthand version of if-else statement. It has three operands and hence the name ternary.
-```
-condition ? if true : if false
-```
-
-#### Bitwise Operators
-These operators are used to perform manipulation of individual bits of a number. They can be used with any of the integer types. They are used when performing update and query operations of Binary indexed tree.
-```
-&, Bitwise AND operator: returns bit by bit AND of input values.
-|, Bitwise OR operator: returns bit by bit OR of input values.
-^, Bitwise XOR operator: returns bit by bit XOR of input values.
-~, Bitwise Complement Operator: This is a unary operator which returns the one’s compliment representation of the input value, i.e. with all bits inversed.
-```
-
-#### Shift Operators
-These operators are used to shift the bits of a number left or right thereby multiplying or dividing the number by two respectively. They can be used when we have to multiply or divide a number by two.
-```
-number shift_op number_of_places_to_shift;
-<< or >>
-```
 
 
 #### instance of operator

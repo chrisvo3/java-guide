@@ -28,9 +28,9 @@ the rest inside the method is the __body of the method__
 Access modifiers determine the visibility of classes, fields, and methods, so that information can be hidden in order to reduce complexity.
 
 - __public:__ accessible in all class in your application.
-- __protected:__ accessible within the class in which it is defined and in its subclass(es)
 - __private:__ accessible only within the class in which it is defined.
 - __default__ (declared/defined without using any modifier) : accessible within same class and package within which its class is defined.
+- __protected:__ accessible within the class in which it is defined and in its subclass(es) and package
 
 
 ## The '_final_' Keyword
