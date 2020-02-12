@@ -57,3 +57,65 @@ public static void main(String[] args) {}
 public static int getAge(int index) {}
 ```
 
+
+## Strings
+
+> String are unique objects taht are used to represent text.
+
+Strings in Java are Objects that are backed internally by a char array. Since arrays are immutable(cannot grow), Strings are immutable as well. Whenever a change to a String is made, an entirely new String is created.
+
+String values can be assigned without the use of the `new` keyword, although the compiler is actually creating `String` objects internally.
+
+Strings can be concatenated via the overloaded `+` operator, which the compiler converts into a chain of method calls on `StringBuilder` object.
+
+A `StringBuilder` (and thread-safe alternative `StringBuffer`) improves performance by modifying a mutable `char[]` buffer before creating an immutable `String` instance.
+
+The immutable property of strings allows the compiler to cache them in a process call _interning_
+
+
+## Enums
+
+> Enums, short for enumerated types, are special classes that represent a set of single-instance constants. 
+
+Enumerations serve the purpose of representing a group of named constants in a programming language.
+
+Practical appplications include the days of the week, the status levels of a task, or the roles of a security group.
+
+Enums were introduced to replace `String` and `Integer` constants and they are far more powerful because they can contain methods, implement interfaces, and provide type safety.
+
+However, enumbs cannot be subclasses or extend my class besides the implicity extended `Enum` class.
+
+```
+public class Test 
+{ 
+    enum Color 
+    { 
+        RED, GREEN, BLUE; 
+    } 
+  
+    // Driver method 
+    public static void main(String[] args) 
+    { 
+        Color c1 = Color.RED; 
+        System.out.println(c1); 
+    } 
+}
+```
+
+Read more on [GeeksforGeeks](https://www.geeksforgeeks.org/enum-in-java/)
+
+
+
+## Packages
+
+is folderst with unique namespace that classes and other resources are organized into.
+
+Packages are commonly organied by two competing methologies: `package-by-layer` and `package-by-feature`
+
+__package-by-layer__ : strategy groups classes together according to their layer in application. It works for small applications, but it doesn't scale well due to the arge number of tightly couples classes that span a relatively small number.
+
+_example_ : package structure include `model`, `controller`, `service`, `dao`, `utility` packages.
+
+__package-by-feature__ : strategy groups classes together according to their cohesiveness in an application. It encourages high modularity and loose coupling and is preferable to `package-by-layer`
+
+_example_ : package structure might include a `customer`, `order`, `product`, `review`, and `report` package.
