@@ -10,6 +10,7 @@ JVM: Java Virtual Machine (actualy virtual machine that run when boost up)
 JDK: Java Development Kits (Have JRE and JVM)
 
 ## What are the _features_ of Java?
+- Object Oriented
 - Platform independence
 - High secure (come in part with virtual machine) because it is strongly type
 - Portable
@@ -26,7 +27,8 @@ eg: NetBeans, Eclipse, IntelliJ
 
 ## What is `Constructor`?
 Constructor is construct the new objects
-Return nothing.
+Use `new` key word
+It has same name as the class, but return nothing.
 
 ## What is meant by local variable and instance variable?
 __local variable :__ inside the method, constructor or code block, destroy when method is completed
@@ -34,7 +36,7 @@ __local variable :__ inside the method, constructor or code block, destroy when 
 __instance variable :__ inside the class, outside any method
 
 ## What is a `Class`?
-A blueprint for an object that define data type and method
+A blueprint for an object that define `data type` and `method`
 
 ## What is an `object`?
 An instance of a class, represent entity, with identity, state, behavior.
@@ -43,13 +45,13 @@ An instance of a class, represent entity, with identity, state, behavior.
 APIE (Abstraction, Polymorphism, Inheritance, Encapsulation)
 
 ## What is `Inheritance`?
-Is the mechanism in java by which one class is allowed to inherit the features (properties and behaviors) of another class
+Is the mechanism in java by which one class is allowed to inherit the features (properties and behaviors) of another class, apply hierchy with one way direction
 
 ## What is `Encapsulation`?
-Wrapping the data or variable and the code that work on the data or method with purpose of hiding the data.
+Wrapping the data and the code that work on the data or method as single unit with purpose of hiding the data.
 
 ## What is `Polymorphism`?
-Is the technique that encourage abstraction by allow an entity to assume multiple forms
+Is the technique that encourage abstraction by allow an entity to assume multiple forms. That is reflect with overloading and overriding.
 
 ## What is meant by `Method Overriding`?
 allows a subclass to take specific implementation of a method that is already provided by its superclasses
@@ -66,13 +68,13 @@ Is when two or more methods in a class have the same name with different method 
 
 ## What is meant by `Abstract` class?
 - restricted class that cannot be instantiate an object 
-- to access it has to be inherit it from another class.
+- to access it has to be inherit it from another class
 - can have both abstract and regular methods
-- must have abstract keywor and cannot be instantiated
+- must have abstract keyword and cannot be instantiated
 
 ## Difference between `Array` and `ArrayList`.
 Array: fixed size, can take primative type and object type 
-ArrayList: resizeable, collection class, object type
+ArrayList: resizeable, collection class, only object type
 
 ## Different between `String`, `StringBuilder`, and `StringBuffer`.
 All are none primative
@@ -86,4 +88,4 @@ StringBuffer: all methods are syncronize provide safety, less effectivion
 
 ## Difference between `default` and `procted` access modifier.
 **default:** accessible within same class and package within which its class is defined
-**protected:** accessible only by the subclass in other packages or any class within the package of the protected member class
+**protected:** accessible only by the subclass in other packages or any class within the package of the protected member class`
