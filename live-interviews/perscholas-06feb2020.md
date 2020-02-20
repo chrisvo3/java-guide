@@ -3,7 +3,7 @@
 > This is the mock questions to practice for a technical interview on 07 Feb 2020
 
 ## What is _Java_?
-Java is high level object oriented programming language that utilize compile code known as byecode
+Java is high level object oriented programming language that utilize compile code known as bytecode
 
 JRE : Java Runtime Environment (1.5, 1.8)
 JVM: Java Virtual Machine (actualy virtual machine that run when boost up)
@@ -40,7 +40,7 @@ A blueprint for an object that define data type and method
 An instance of a class, represent entity, with identity, state, behavior.
 
 ## What are the OOPS _concepts_?
-APIE
+APIE (Abstraction, Polymorphism, Inheritance, Encapsulation)
 
 ## What is `Inheritance`?
 Is the mechanism in java by which one class is allowed to inherit the features (properties and behaviors) of another class
@@ -49,13 +49,13 @@ Is the mechanism in java by which one class is allowed to inherit the features (
 Wrapping the data or variable and the code that work on the data or method with purpose of hiding the data.
 
 ## What is `Polymorphism`?
-Compile time polymorphism
+Is the technique that encourage abstraction by allow an entity to assume multiple forms
 
 ## What is meant by `Method Overriding`?
-allos a subclass to take specific implementation of a method that is already provided by its superclasses
+allows a subclass to take specific implementation of a method that is already provided by its superclasses
 
 ## Whta is meant by `Overloading`?
-The class is allowed to have 
+Is when two or more methods in a class have the same name with different method signatures.
 
 ## What is meant by `Interface`?
 - blueprint of a class
