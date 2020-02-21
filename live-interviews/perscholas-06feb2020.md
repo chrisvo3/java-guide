@@ -79,8 +79,8 @@ ArrayList: resizeable, collection class, only object type
 ## Different between `String`, `StringBuilder`, and `StringBuffer`.
 All are none primative
 String: immutable, can't be change
-StringBuilder: mutable, can be change easily, faster
-StringBuffer: all methods are syncronize provide safety, less effectivion
+StringBuilder: mutable, can be change easily, faster than StringBuffer
+StringBuffer: all methods are syncronize provide thread-safe,
 
 ## Explain about `public` and `private` access modifier.
 **public:** low restrictive, accesible in all class
