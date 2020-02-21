@@ -86,6 +86,6 @@ StringBuffer: all methods are syncronize provide thread-safe,
 **public:** low restrictive, accesible in all class
 **private:** most restrictive, accessible only within the class it is defined
 
-## Difference between `default` and `procted` access modifier.
+## Difference between `default` and `protected` access modifier.
 **default:** accessible within same class and package within which its class is defined
 **protected:** accessible only by the subclass in other packages or any class within the package of the protected member class`
