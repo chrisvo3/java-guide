@@ -68,24 +68,31 @@ Is when two or more methods in a class have the same name with different method 
 
 ## What is meant by `Abstract` class?
 - restricted class that cannot be instantiate an object 
-- to access it has to be inherit it from another class
+- to access it, has to be inherit it from another class
 - can have both abstract and regular methods
 - must have abstract keyword and cannot be instantiated
 
 ## Difference between `Array` and `ArrayList`.
-Array: fixed size, can take primative type and object type 
-ArrayList: resizeable, collection class, only object type
+__Array:__ fixed size, can take primative type and object type 
+
+__ArrayList:__ resizeable, collection class, only object type
 
 ## Different between `String`, `StringBuilder`, and `StringBuffer`.
+
 All are none primative
-String: immutable, can't be change
-StringBuilder: mutable, can be change easily, faster than StringBuffer
-StringBuffer: all methods are syncronize provide thread-safe,
+
+__String:__ immutable, can't be change
+
+__StringBuilder:__ mutable, can be change easily, faster than StringBuffer
+
+__StringBuffer:__ all methods are syncronize provide thread-safe,
 
 ## Explain about `public` and `private` access modifier.
 **public:** low restrictive, accesible in all class
+
 **private:** most restrictive, accessible only within the class it is defined
 
 ## Difference between `default` and `protected` access modifier.
 **default:** accessible within same class and package within which its class is defined
+
 **protected:** accessible only by the subclass in other packages or any class within the package of the protected member class`
