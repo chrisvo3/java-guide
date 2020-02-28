@@ -109,7 +109,7 @@ If the first two statements are true, the third statement is `true/false/uncerta
 
 #### Quesiton 1
 
-All of the trees in the park are flowering trees, so aall dogwoods in the park are flowering trees.
+All of the trees in the park are flowering trees, so all dogwoods in the park are flowering trees.
 
 #### Quesiton 2
 
