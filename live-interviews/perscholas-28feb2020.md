@@ -17,3 +17,4 @@ MVC = Model, View, Controller
 
 The `SLF4J API` specification. There are different, and interchangeable, implementations of `SLF4J`. This makes it a great selection for `logging`, because a team can decide to provide a different implementation without altering the correctness of the application. Logging; the messages and reporting that comes from your application.`JPA` works the same way. There are different “flavors” of JPA.
 
+## What is hash code?
