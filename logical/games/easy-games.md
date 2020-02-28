@@ -81,42 +81,42 @@ __10. What day is the vacuuming done?__
 
 ### Question 1. What color is the vice president's car?
 
-The vice president' car cannot be red, because that is the CEO's car, which is in the first space. Nor can it be purple, because that is the treasurer's car, which is in the last space. Nor yellow, because that is the secretary's.
+The vice president' car cannot be `red`, because that is the CEO's car, which is in the first space. Nor can it be `purple`, because that is the treasurer's car, which is in the last space. Nor `yellow`, because that is the secretary's.
 
-The president's car must be blue, because it is parked between a red car (in the first space) and a green car, which must be the vice president's.
+The president's car must be `blue`, because it is parked between a `red` car (in the first space) and a `green` car, which must be the vice president's.
 
 ### Question 2. Who is the CEO?
 
-The CEO drives a red car and parks in the first space. Enid rdives a green car, Bert's car is not in the first space; David's is not in the first space, but the last. Alice's car is parked next to David's, so Cheryl is the CEO. 
+The CEO drives a `red` car and parks in the first space. `Enid` drives a `green` car, `Bert`'s car is not in the first space; `David`'s is not in the first space, but the last. `Alice`'s car is parked next to `David`'s, so `Cheryl` is the CEO. 
 
 ### Question 3. Who is the secretary?
 
-Cheryl cannot be the secretary, since she's the CEO, nor can Enid, because she drives a green car, and the secretary drives a yellow car. David's, the purple car, is in the last space. Alice is the secretary, because her car is parked next to David's, which is where the secretary's car is parked.
+`Cheryl` cannot be the secretary, since she's the CEO, nor can `Enid`, because she drives a `green` car, and the secretary drives a `yellow` car. `David`'s, the `purple` car, is in the last space. `Alice` is the secretary, because her car is parked next to `David`'s, which is where the secretary's car is parked.
 
 ### Question 4. Which city got the most rain?
 
-Olliopolis got 44 inches or rain. Last Stand got more rain than that, so it got 65 inches, which is the most.
+`Olliopolis` got `44 inches` of rain. `Last Stand` got more rain than that, so it got `65 inches`, which is the most.
 
 ### Question 5. How much rain did Mile City get?
 
-Olliopolis got 44 inches of rain, Last Stand got 65, and Polberg got 12. New Town is in the mountains, and the city in the mountains got 32 inches of rain. Therefore, Mile City got 27. 
+`Olliopolis` got `44 inches` of rain, `Last Stand` got `65`, and `Polberg` got `12`. `New Town` is in `the mountains`, and `the city` in `the mountains` got `32 inches` of rain. Therefore, `Mile City` got `27 inches`. 
 
 ### Question 6. Which city is in the desert?
 
-The city that got the least rain is in the desert. New Town is in the mountains. Last Stand got more rain than Olliopolis, so it cannot be the city with the least rain; also, Mile City cannot be the city with the least rain. Olliopolis got 44 inches of rain. Therefore, Polberg is in the desert and got 12 inches of rain.
+The city that got the least rain is in `the desert`. `New Town` is in `the mountains`. `Last Stand` got more rain than `Olliopolis`, so it cannot be the city with the least rain; also, `Mile City` cannot be the city with the least rain. `Olliopolis` got `44 inches` of rain. Therefore, `Polberg` is in `the desert` and got `12 inches` of rain.
 
 ### Question 7. Where is Olliopolis located?
 
-Olliopolis got 44 inches of rain, so it is not in the desert or the forest. The city in the mountains got 32 inches of rain; the coast 27. Therefore, Olliopolis is in a valley.
+`Olliopolis` got `44 inches` of rain, so it is not in `the desert` or `the forest`. The city in `the mountains` got `32 inches` of rain; `the coast` got `27 inches`. Therefore, `Olliopolis` is in `a valley`.
 
 ### Question 8. What task does Terry do on Wednesday?
 
-Terry does not dust, mop, or do laundry or vacuum. Therefore, Terry does the sweeping on Wednesday.
+`Terry` does not `dust`, `mop`, or do `laundry` or `vacuum`. Therefore, `Terry` does the `sweeping` on `Wednesday`.
 
 ### Question 9. What day does Uma do her task?
 
-Uma does the mopping, which is done on Thursday.
+`Uma` does the `mopping`, which is done on `Thursday`.
 
 ### Question 10. What day is the vacuuming done?
 
-Dusting is on Tueday, sweeping is on Wednesday, mopping is on Thursday, and laundry is on Friday. Therefore, the vacuuming is done on Monday.
+`Dusting` is on `Tueday`, `sweeping` is on `Wednesday`, `mopping` is on `Thursday`, and `laundry` is on `Friday`. Therefore, the `vacuuming` is done on `Monday`.
