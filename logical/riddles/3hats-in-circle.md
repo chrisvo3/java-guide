@@ -1,7 +1,6 @@
 # 3 Hats in a Circle
 
 ## Question
-
 Three men, who are not wearing glasses, are placed in a room without mirrors.
 
 A hat, which they cannot see, is placed on each of their heads. The hat is either red or green in color.

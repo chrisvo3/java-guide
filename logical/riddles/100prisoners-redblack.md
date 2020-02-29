@@ -1,7 +1,6 @@
 # 100 Prisoners with Red/Black Hats
 
 ## Question
-
 100 prisoners in jail are standing in a queue facing in one direction. Each prisioner is wearing a hat of color either black or red.
 
 A prisoner can see hats of all prisoners in fornt of him in the queue, but cannot see his hat and hats of prioners stnaidng behind him.

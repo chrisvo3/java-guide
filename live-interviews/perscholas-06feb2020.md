@@ -44,14 +44,20 @@ An instance of a class, represent entity, with identity, state, behavior.
 ## What are the OOPS _concepts_?
 APIE (Abstraction, Polymorphism, Inheritance, Encapsulation)
 
+## What is `Abstraction`?
+It refers to the ability to make a class abstract in OOP. It helps to reduce the complexity and also improves the maintainability of the system.
+
+## What is `Polymorphism`?
+Is the technique that encourage abstraction by allow an entity to assume multiple forms. That is reflect with overloading and overriding.
+
 ## What is `Inheritance`?
 Is the mechanism in java by which one class is allowed to inherit the features (properties and behaviors) of another class, apply hierchy with one way direction
 
 ## What is `Encapsulation`?
 Wrapping the data and the code that work on the data or method as single unit with purpose of hiding the data.
 
-## What is `Polymorphism`?
-Is the technique that encourage abstraction by allow an entity to assume multiple forms. That is reflect with overloading and overriding.
+## What is the primary benefit of Encapsulation?
+The main benefit of encapsulation is the ability to modify our implemented code without breaking the code of others who use our code. With Encapsulation gives maintainability, flexibility, and extensibility to our code.
 
 ## What is meant by `Method Overriding`?
 allows a subclass to take specific implementation of a method that is already provided by its superclasses

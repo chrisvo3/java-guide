@@ -1,7 +1,6 @@
 # 100 Doors Logic Puzzle
 
 ## Question
-
 You have 100 doors in a row that are all initially closed. you make 100 passes by the doors starting with the frst door every time. 
 
 The first time though, you visit every door and toggle the door 

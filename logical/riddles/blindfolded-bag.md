@@ -1,7 +1,6 @@
 # Blindfolded Grab Bag
 
 ## Question
-
 Assume you are blindfolded and placed in front of a large bowl containing currency in $50, $20, $10, and $5 denominations.
 
 You are allowed to reach in and remove bills, one bill at a time.

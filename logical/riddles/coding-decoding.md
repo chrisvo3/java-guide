@@ -1,7 +1,6 @@
 # Coding Decoding
 
 ## Question
-
 Below, some codes are given and the meaning is written in front of it:
 
 1. 'DoMuz Stew Choi' = 'We are Spirits';

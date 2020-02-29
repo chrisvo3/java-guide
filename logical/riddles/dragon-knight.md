@@ -1,7 +1,6 @@
 # Dragon vs Knight
 
 ## Question
-
 A dragon and knight live on an island. This island has 7 poisoned wells, numbered 1 to 7.
 
 If you drink from a well, you can only save yourself by drinking from a higher numbered well.

@@ -1,7 +1,6 @@
 # 2 Gloves & 3 Patients
 
 ## Question
-
 Dr.Will wants to operate for three different persons who ere wounded.
 
 But he had only two surgical gloves.

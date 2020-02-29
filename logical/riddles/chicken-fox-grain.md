@@ -1,7 +1,6 @@
 # Chicken, Fox and Grain
 
 ## Question
-
 A farmer is standing on one bank or a river, with a fox, a chicken, and a bag of grain.
 
 He needs to get to the other side of the river, taking the fox, the chicken and the grain with him.
