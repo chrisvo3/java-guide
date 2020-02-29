@@ -10,6 +10,10 @@
 
 ## Is String immutable? If so, why?
 
+Yes, String is immutatble because String objects are cached in String pool. So that once it is created a String object cannot be changed. Since String is immutatble it can safely be shared between many threads, which is considered very important for multithreaded programming.
+
+Read more on [Baeldung](https://www.baeldung.com/java-string-immutable) and [JavaVisited](https://javarevisited.blogspot.com/2010/10/why-string-is-immutable-or-final-in-java.html)
+
 ## What is the `Design Principle`?
 
 Design Patterns are simple and elegant solutions of commonly occurin problems in software design. Design Patterns make it easier to reuse successful designs and architectures of experienced and Professional Designers. There are 3 types of patterns:
@@ -26,3 +30,7 @@ Design Patterns are simple and elegant solutions of commonly occurin problems in
 The `SLF4J API` specification. There are different, and interchangeable, implementations of `SLF4J`. This makes it a great selection for `logging`, because a team can decide to provide a different implementation without altering the correctness of the application. Logging; the messages and reporting that comes from your application.`JPA` works the same way. There are different “flavors” of `JPA`.
 
 ## What is `hash code`?
+
+## What is `Singleton` class?
+Singleton class control object creation, limiting the number to one but allowing the flexibility to create more objects if the situation changes.
+
