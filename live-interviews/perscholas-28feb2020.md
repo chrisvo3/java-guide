@@ -40,6 +40,7 @@ Design Patterns are simple and elegant solutions of commonly occurin problems in
 ## What is the best `REST API` for logging?
 The `SLF4J API` specification. There are different, and interchangeable, implementations of `SLF4J`. This makes it a great selection for `logging`, because a team can decide to provide a different implementation without altering the correctness of the application. Logging; the messages and reporting that comes from your application.`JPA` works the same way. There are different “flavors” of `JPA`.
 
+
 ## What is `hash code`?
 
 ## What is `Singleton` class?
