@@ -1,4 +1,4 @@
-# Java Interview Questions
+# Study Java
 
 * __Purpose__ : To review and practice material before interview
 
