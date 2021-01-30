@@ -12,7 +12,7 @@ f(["dog", "dog", "elephant"]) = ["elephant"]
 f(["dog", "dog"]) = []
 f(["dog", "elephant", "dog"]) = ["elephant"]
 f(["dog", "dog", "elephant", "dog"]) = ["elephant"]
-f(["dog", "elephant"]) = ["elephant"]
+f(["dog", "elephant"]) = ["dog", "elephant"]
 ```
 
 #### Solve
