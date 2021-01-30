@@ -25,7 +25,7 @@ If the first two statements are true, the third statement is `true/false/uncerta
 
 
 #### Question 3
-Commons.
+Apartments in the Riverdale Manor cost less than apartments in The Gaslight Commons.
 
 Apartments in the Livingston Gate cost more than apartments in the Gaslight Commons.
 
