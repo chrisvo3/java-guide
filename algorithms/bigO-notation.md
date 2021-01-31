@@ -1,7 +1,5 @@
 # Big O Notation
 
-__Source:__ book `Cracking Coding Interview` and [dev.to](https://dev.to/jainroe/the-ultimate-guide-to-big-o-notation--learning-through-examples-5ecp)
-
 > Big O time is the language and metric we use to describe how long does it take for an algorithm takes to run.
 > _"How quickly it grows relative to the input, as the input gets arbitrarily large."_
  
@@ -27,9 +25,13 @@ We often speak of "extra" memory needed, not counting the memory needed to store
 
 > an algorithm that will always execute in the same time (or space) regardless of the size of the input data set.
 
+`O(1)` means that the algorithm takes the same number of steps to execute regardless of how much data is passed in. This is why it is called *constant time*.
+
+![Big O(1) - Constant](./img/BigO_1-constant.png)
+
 ```java
 function boolean IsFirstElementNull(IList<string> elements) {
-    return elements[0] == null;
+	return elements[0] == null;
 }
 ```
 
@@ -68,6 +70,8 @@ __Explaination :__
 ## O(n) - Linear Time
 
 > an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set. 
+ 
+![Big O(1) - Constant](./img/BigO_1-constant.png)
 
 ```java
 foreach (orange in oranges) {
@@ -138,7 +142,7 @@ __Worst-Cast Scenario:__ In the worst case scenario, I will have to ask n^2 ques
 
 ```java
 function string search_bag(data) {
-    int n = data.length();
+	int n = data.length();
 
 	for(int i = 0; i < n; i++) {
 		System.out.println("Do you have my bag, " + data[i] + "?")
@@ -177,7 +181,7 @@ This is common with algorithms that involve nested iterations over the data set.
 
 ---
 
-## O(2n)
+## O(2^n)
 
 > an algorithm whose growth doubles with each additon to the input data set.
  
@@ -185,8 +189,8 @@ The growth curve of an O(2N) function is exponential - starting off very shallow
 
 ```java
 function int Fibonacci(int number) {
-    if (number <= 1) return number;
-    return Fibonacci(number - 2) + Fibonacci(number - 1);
+	if (number <= 1) return number;
+	return Fibonacci(number - 2) + Fibonacci(number - 1);
 }
 ```
 
@@ -202,25 +206,25 @@ __Worst-case Scenario:__ In the worst case, I will have to ask `log n` questions
 
 ```java
 function boolean binary_bag_search(data, target, low = 0, high = null) {
-    
-    if (high == null) {
-        high = data.length() - 1;
-    }
+	
+	if (high == null) {
+		high = data.length() - 1;
+	}
 
-    if (low > high) {
-        return false;
-    } else {
-        mid = (low + high) // 2
-        if (data[mid] == target) {
-            return true;
-        }
-        else if(data[mid] > target) {
-           return binary_search(data, target, low, mid - 1)
-        }
-        else {
-            return binary_search(data, target, mid + 1, high);
-        }
-    }
+	if (low > high) {
+		return false;
+	} else {
+		mid = (low + high) // 2
+		if (data[mid] == target) {
+			return true;
+		}
+		else if(data[mid] > target) {
+		   return binary_search(data, target, low, mid - 1)
+		}
+		else {
+			return binary_search(data, target, mid + 1, high);
+		}
+	}
 }
 
 data = ['Jane','James','Jon', 'Joe']; // here Joe has the bag
@@ -237,3 +241,17 @@ __Explaination:__
 2. `O(log n)` algorithms are very efficient because increasing amount of data has little effect at some point early on because the amount of data is halved on each run through.
 
 3. Binary search is a perfect example of this.
+
+---
+
+__Source:__
+
+- Book `Cracking Coding Interview`
+
+- [dev.to](https://dev.to/jainroe/the-ultimate-guide-to-big-o-notation--learning-through-examples-5ecp)
+
+- [toward data science](https://towardsdatascience.com/the-big-o-notation-d35d52f38134)
+
+- [coding ninja](https://www.codingninjas.com/blog/2019/06/12/the-ultimate-beginners-guide-to-analysis-of-algorithm/)
+
+- [codeburst.io](https://codeburst.io/the-ultimate-beginners-guide-to-analysis-of-algorithm-b8d32aa909c5)
