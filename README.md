@@ -25,9 +25,35 @@ __Whiteboard__ : These questions with their level are coming from `CodeWar` and 
 
 ## Objectives
 
-* __Algorithms__ :
+* __Foundation__ :
 
-    * [Big O Notation](algorithms/bigO-notation.md) : go over Big O notation
+    * __Object Oriented Programming__ :
+
+        - [](.md) : 
+
+    * __Algorithms__ :
+
+        - [Big O Notation](foundations/algorithms/bigO-notation.md) : go over Big O notations
+
+    * __Design Patterns__ :
+
+        - [](.md) : 
+
+    * __Data Structures__ :
+
+        - [](.md) : 
+    
+    * __Vocabulary__ :
+
+        - [Basic about Java](vocabulary-terms/basic-java.md) : go over history, JVM, JRE, procedural and object oriented programming,
+
+        - [OOP Principle](vocabulary-terms/.md) : go over 5 different principles of oop
+
+        - [OOP 4 Pillars](vocabulary-terms/.md) : go over abstraction, polymorphism, inheritance, encapsulation
+
+        - [Core Java](vocabulary-terms/core-java.md)
+
+        - [Concurrency](vocabulary-terms/concurrency.md)
 
 * __Live Interviews__ :
 
@@ -37,17 +63,6 @@ __Whiteboard__ : These questions with their level are coming from `CodeWar` and 
 
     * [Per Scholas - 28 Feb 2020](live-interviews/perscholas-28feb2020.md) 
 
-* __Vocabulary__ :
-
-    * [Basic about Java](vocabulary-terms/basic-java.md) : go over history, JVM, JRE, procedural and object oriented programming,
-
-    * [OOP Principle](vocabulary-terms/.md) : go over 5 different principles of oop
-
-    * [OOP 4 Pillars](vocabulary-terms/.md) : go over abstraction, polymorphism, inheritance, encapsulation
-
-    * [Core Java](vocabulary-terms/core-java.md)
-
-    * [Concurrency](vocabulary-terms/concurrency.md)
 
 * __Whiteboard Questions__ :
 

@@ -1,9 +1,34 @@
 # Big O Notation
 
 > Big O time is the language and metric we use to describe how long does it take for an algorithm takes to run.
+
 > _"How quickly it grows relative to the input, as the input gets arbitrarily large."_
  
 Big O notation is used to describe or calcuate time complexity (worst-case performance) of an algorithm.
+
+To analyze an algorithm, we look for its performance and resouce usage. Faster performance does not always means that you have done it correctly, but the slower performance and correct answer can mean that you have complicated the code. When writing pseudocode, take these into consideration:
+
+1. Input: is the input too complicated or wrong?
+
+2. Input size: is the input becomes too large and would be difficult to process?
+
+The processing will depend on the nature of the input and input size.
+
+---
+
+When analyze the algorithm, we also analyze how many times the principal acitivity of the algorithm is being performed. Then count the number of comparisons.
+
+## 1. Worst Case:
+
+During the worst case, we calculate the upper bound of a running time. In this case, the maximum number of operations to be executed over all inputs of size `n`. This can easily happen. 
+
+## 2. Average Case:
+
+Is the most usefull measure, yet typically a diffcult thing to measure. In this case, we take all possible inputs and calculate computing time for all of the inputs. Sum all the calculated values and divide the sum by a total number of inputs. The average will help us predict almost accurately the distribution throughout the data set.
+
+## 3. Best Case:
+
+This case is rarely used. In this case, the lower bound algorithm is ued. We must consider the minimum number of operations that can be executed for the input size `n`. This might help us to get the best behaviour of a specific algorithm.
 
 ---
 
@@ -21,13 +46,30 @@ We often speak of "extra" memory needed, not counting the memory needed to store
 
 ---
 
+The following 3 asymptotic notations are mostly used to represent time complexity of algorithms.
+1) Θ Notation (Theta notation)
+2) Big O Notation
+3) Ω Notation (Omega notation)
+
+--- 
+
+## Big O and its Rate of Growth
+
+`O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!)`
+
+The worst-case scenario is known as the `upper bound`. The best case scenario is known as `lower bound`.
+
+![Big O graph](https://jarednielsen.com/static/9c24f10d0295ead7526e32d62fa2eac5/b9e4f/big-o-cheatsheet.png)
+
+---
+
 ## O(1) - Constant Time
 
 > an algorithm that will always execute in the same time (or space) regardless of the size of the input data set.
 
 `O(1)` means that the algorithm takes the same number of steps to execute regardless of how much data is passed in. This is why it is called *constant time*.
 
-![Big O(1) - Constant](./img/BigO_1-constant.png)
+![Big O(1) - Constant](img/BigO_1-constant.png "Big O(1) - Constant")
 
 ```java
 function boolean IsFirstElementNull(IList<string> elements) {
@@ -69,9 +111,11 @@ __Explaination :__
 
 ## O(n) - Linear Time
 
-> an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set. 
+> an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set.
+
+`O(n)` describes the algorithm that will take as many steps as there are elements of data such as iterating through an array; as the array increase in `n` size, an `O(n)` algorithm will increase by `n` steps. This is why it is *linear*.
  
-![Big O(1) - Constant](./img/BigO_1-constant.png)
+![Big O(n) - Linear](img/BigO_n-linear.png "Big O(n) - Linear")
 
 ```java
 foreach (orange in oranges) {
@@ -122,6 +166,12 @@ The example below also demonstrates how Big O favours the worst-case performance
 ## O(n^2) - Quadratic Time
 
 > an algorithm whose performance is directly proportional to the square of the size of the input data set. 
+
+`O(n^2)` means an algorithm whose performance is proportional to the square of the size of the input elements, such as comparing every element in an array to every other element in an array. This is why it is *quadratic*. 
+
+It is generally quite slow: if input array has 1 element, it will do 1 operation; if it has 10 element, it will do 100 operations.
+
+![Big O(n^2) - Quadratic](img/BigO_n_square-quadratic.png "Big O(n^2) - Quadratic")
 
 ```java
 for (var outer = 0; outer < elements.Count; outer++) {
@@ -181,10 +231,14 @@ This is common with algorithms that involve nested iterations over the data set.
 
 ---
 
-## O(2^n)
+## O(2^n) - Exponential
 
 > an algorithm whose growth doubles with each additon to the input data set.
- 
+
+`O(2^n)` is algorithm that takes twice as long for every new element added. 
+
+__Scalability:__ poor.
+
 The growth curve of an O(2N) function is exponential - starting off very shallow, then rising meteorically. An example of an O(2N) function is the recursive calculation of Fibonacci numbers:
 
 ```java
@@ -197,6 +251,20 @@ function int Fibonacci(int number) {
 ---
 
 ## O(log n) - Logarithmic Time
+
+> an algorithm that its number of operations increase by one each time the data is doubled (the number of steps barely increase as the input grows) by divide problems in half every time.
+ 
+`O(log n)` means an algorithm whose complexity increase such as dividing an array in half until only one element remains. This is why it is logarithmic.
+
+__Example__: Looking for people in phone book is `O(log n)` as you don't need to check every person in the phone book to find the right one. Instead, you can simply divide and look based on where their name is alphabetically, and in every section you only need to explore a subset of each section before eventually find someone;s phone number.
+
+1. Open phone book in the middle and check the first word.
+
+2. If our name is alphabetically more signifiticant, look in the right half, else look in the left half.
+
+3. Divide the remainder in half again, repeat steps 2 and 3 until we find our name.
+
+![Big O(log n) - Logarithmic](img/BigO_log_n-logarithmic.png "Big O(log n) - Logarithmic")
 
 __Scenario:__ All students know who has my bag but will only tell me if I guessed the right name.
 
@@ -244,6 +312,51 @@ __Explaination:__
 
 ---
 
+## O(n log n) - Log linear
+
+> an algorithm that is doing `log n` work `n` times, slightly worse than `O(n)`
+
+`O(n log n)` describe an algorithm whose complexity increases linearithmic such as dividing array in half and iterating through each half. Many practical algorithms belong in this category from *sorting*, to *pathfinding*, to *compression*.
+
+__Examples__: Merge sort - it divides the input arrays in two halves, calls itself for each one and then merges the two sorted halves.
+
+__Scalability__: Average.
+
+```java
+```
+
+__Scenario:__ 
+
+__Approach:__
+
+__Worst-case Scenario:__ 
+
+---
+
+# O(n!) - Factorial
+
+> an algorithm has a run time proportional to the factorial of the input size:
+
+`O(n!)` is an algorithm that has rate of groth slowest, or known to be teh worst of the worst. The problem with this algorithm is that it take too much memories to run.
+
+An algorithm with factorial time complexity is used when calculating permnutations and combinations. However, not everyone want to write terrible algorithms, there are some problems for which there is no easy solution.
+
+__Examples__: Merge sort - it divides the input arrays in two halves, calls itself for each one and then merges the two sorted halves.
+
+__Scalability__: Average.
+
+```java
+
+```
+
+__Scenario:__ 
+
+__Approach:__
+
+__Worst-case Scenario:__ 
+
+---
+
 __Source:__
 
 - Book `Cracking Coding Interview`
@@ -255,3 +368,5 @@ __Source:__
 - [coding ninja](https://www.codingninjas.com/blog/2019/06/12/the-ultimate-beginners-guide-to-analysis-of-algorithm/)
 
 - [codeburst.io](https://codeburst.io/the-ultimate-beginners-guide-to-analysis-of-algorithm-b8d32aa909c5)
+
+- [jared nielsen](https://jarednielsen.com/big-o-factorial-time-complexity/)
