@@ -37,4 +37,10 @@ Object-oriented programming is far more flexible and easier to maintain.
 
 ## What is the different between Java EE and Java SE?
 
-Java EE 
+## What is WORA principle? Why is it benefical?
+
+## How can Java application run on multiple platforms?
+
+## What is the difference between the JRE and the JDK?
+
+## What is the difference between procedural programming and object-oriented programming?
