@@ -1,12 +1,12 @@
 # Study Java
 
-* __Purpose__ : To review and practice material before interview
+* __Purpose__ : These are my notes to study. Usually this is private repo, but sometime I open this in order to share my notes with friends.
 
 ## About
 
 > Please notice that I don't claim to own any of these infomation.
 
-This repository is mainly for myself to study and prepare for interviews in Java. Maybe this would help other people to study as well.
+This repository is mainly for myself to study in Java. Maybe this would help other people to study as well.
 
 > Please notice that not everything vocabulary terms will be on here.
 
@@ -27,21 +27,53 @@ __Whiteboard__ : These questions with their level are coming from `CodeWar` and 
 
 * __Foundation__ :
 
+    * __Data Structures__ :
+
+        - [Linked Lists](.md) :
+
+        - [Tree, Tries & Graphs](.md) :
+
+        - [Stacks & Queues](.md) :
+
+        - [Heaps](.md) :
+
+        - [Vectors / ArrayLists](.md) :
+
+        - [Hash Tables](.md) :
+
     * __Object Oriented Programming__ :
 
         - [](.md) : 
 
-    * __Algorithms__ :
+    * __Algorithms__ : An algorithm is simply a set of steps used to complete a specific task. They're the building blocks for programming.
 
-        - [Big O Notation](foundations/algorithms/bigO-notation.md) : go over Big O notations
+        - [Breadth-First Search](.md) :
+
+        - [Depth-First Search](.md) :
+
+        - [Binary Search](.md) :
+
+        - [Merge Sort](.md) :
+
+        - [Quick Sort](.md) :
 
     * __Design Patterns__ :
 
         - [](.md) : 
 
-    * __Data Structures__ :
+    * __Concepts__ :
 
-        - [](.md) : 
+        - [Big O Notation](foundations/algorithms/bigO-notation.md) : go over Big O notations
+
+            - [Big O Exercises](foundations/algorithms/bigO-exercises.md) : practice understanding of algorithm
+        
+        - [Bit Manipulation](.md) :
+
+        - [Memory (Stack vs. Heap)](.md) :
+
+        - [Recursion](.md) :
+
+        - [Dynamic Programming](.md) :
     
     * __Vocabulary__ :
 

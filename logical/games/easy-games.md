@@ -2,8 +2,6 @@
 
 > 10 Questions and Answers with analyzes 
 
-## Question
-
 ### Scenario 1
 At a small company, parking spaces are reserved for the top executives: CEO, president, vice president, secretary, and treasurer with spaces lined up in that order. The parking lot uard can tell at a glance if the cars are packed correctly by looking at the color of the cars. The cars are `yellow`, `green`, `purple`, `red`, and `blue`, and the executives names are `Alice`, `Bert`, `Cheryl`, `David`, and `Enid`.
 
@@ -24,6 +22,7 @@ __2. Who is the CEO?__
 
 __3. Who is the Secretary?__
 
+---
 
 ### Scenario 2
 Five cities all got more rain than usual this year. The five cities are: `Last Stand`, `Mile City`, `New town`, `Olliopolis`, and `Polberg`. The cities are located in five different areas of the country: `the mountain`, `the forest`, `the coast`, `the desert`, and in `a valley`.
@@ -50,6 +49,7 @@ __6. Which city is in the dessert?__
 
 __7. Where is Olliopolis located?__
 
+---
 
 ### Scenario 3
 Five roomates `Randy`, `Sally`, `Terry`, `Uma` and `Vernon` each do one housekeeping task: `mopping`, `sweeping`, `laundry`, `vaccuming`, or `dusting` one day a week, `Monday` through `Friday`.
@@ -72,7 +72,7 @@ __9. What day does Uma do her task?__
 
 __10. What day is the vacuuming done?__
 
-
+---
 
 ## Answers
 

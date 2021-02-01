@@ -34,13 +34,17 @@ This case is rarely used. In this case, the lower bound algorithm is ued. We mus
 
 ## Time Complexity
 
-> is a function describing the amount of time an algorithm takes in terms of the amount of input to the algorithm. 
+> How much time does it take to complete?
+
+Time Complexity is a function describing the amount of time an algorithm takes in terms of the amount of input to the algorithm. 
 
 "Time" can mean the number of memory accesses performed, the number of comparisons between integers, the number of times some inner loop is executed, or some other natural unit related to the amount of real time the algorithm will take. 
 
 ## Space Complexity
 
-> is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm. 
+> How much memory does it require?
+
+Space Complexity is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm. 
 
 We often speak of "extra" memory needed, not counting the memory needed to store the input itself. Again, we use natural (but fixed-length) units to measure this. We can use bytes, but it's easier to use, say, number of integers used, number of fixed-sized structures, etc. In the end, the function we come up with will be independent of the actual number of bytes needed to represent the unit. Space complexity is sometimes ignored because the space used is minimal and/or obvious, but sometimes it becomes as important an issue as time.
 
@@ -370,3 +374,5 @@ __Source:__
 - [codeburst.io](https://codeburst.io/the-ultimate-beginners-guide-to-analysis-of-algorithm-b8d32aa909c5)
 
 - [jared nielsen](https://jarednielsen.com/big-o-factorial-time-complexity/)
+
+- [free code camp](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)

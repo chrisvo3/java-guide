@@ -15,12 +15,12 @@ f(["dog", "dog", "elephant", "dog"]) = ["elephant"]
 f(["dog", "elephant"]) = ["dog", "elephant"]
 ```
 
-#### Solve
+#### Solution
 
 This is `O (log n)^2` performance, which will do poorly.
 `log n` is when we go through all items of the list
 
-```
+```java
 String[] f(inputArray) {
 
 	List list = [];
@@ -82,10 +82,8 @@ cBA, cBa, cbA, cba
 ```
 
 #### Solution
-```
-
+```java
 for (int i = 0; i < array.length; i++) {
 
 }
-
 ```
