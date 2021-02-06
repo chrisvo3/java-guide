@@ -12,18 +12,28 @@ This repository is mainly for myself to study in Java. Maybe this would help oth
 
 In the future, I might have a website that go over everything about Java, include its definition.
 
-__Algorithm__ : These go over the everything you need to know about algorithm for the interview, include sample code for Java.
+## Index
 
-__Live Interview__ : Some real interviews that I and other people went through. These is viewed as a review and a guide.
+> Most interviewrs won't ask about specific algorithms for binary tree balancing or other complex algorithms. Frankly, being several years out of school, they probably don't remember these algorithms either.
+>
+> You're usually only expect to know the basic.
 
-__Logical__: A mini game that help sharping mind and refresh mind before doing some coding.
+These are must-have knowledge.
 
-__Vocabulary__ : Most of these terms are coming from the book `Java Interview Guide` by `Anthony Depalma`. While some of them are from a lot of googling with my own definition.
+*This table is build using [Table Geneartors Tool](https://www.tablesgenerator.com/markdown_tables)*
 
-__Whiteboard__ : These questions with their level are coming from `CodeWar` and `HackerRank`.
+| Data Structure        | Algorithms          | Concepts                |
+|-----------------------|---------------------|-------------------------|
+| Linked Lists          | Breath-First Search | Bit Manipulation        |
+| Trees, Tries & Graphs | Depth-First Search  | Memory (Stack vs. Heap) |
+| Stacks & Queues       | Binary Search       | Recursion               |
+| Heaps                 | Merge Sort          | Dynamic Progamming      |
+| Vectors / ArrayLists  | Quick Sort          | Big O Time & Space      |
+| Hash Tables           |                     |                         |
 
+Make sure that you understand how to use and implement them, and where applicable, the space and time complexity. Practicing implementing the data structures and algorithm is a great exercise.
 
-## Objectives
+---
 
 * __Foundation__ :
 
@@ -99,4 +109,10 @@ __Whiteboard__ : These questions with their level are coming from `CodeWar` and 
 * __Whiteboard Questions__ :
 
     * [Level 1](whiteboard-questions/level-1.md)
+
+---
+
+## IntelliJ IDEA
+
+
 
