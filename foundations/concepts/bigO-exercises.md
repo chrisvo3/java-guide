@@ -296,11 +296,24 @@ Whereas if `N = arrayN.length` and `arrayN.length = 5`, then by logic of `O(n^2)
 What is the runtime for this strange code below?
 
 ```java
+void unorderedPairs(int[] arrayA, int[] arrayB) {
+	for (int i = 0; i < arrayA.length; i++) {
+		for (int j = 0; j < arrayB.lenth; j++) {
+			for (int k = 0; k < 1000; k++) {
+				System.out.println(arrayA[i] + ';' )
+			}
+		}
+	}
+}
 ```
 
 #### Solution
 
+There is `O(ab)`.
+
 ### Explaination
+
+Because nothing is change compare the last question, and the loop through `1000` is a constant. Therefore, this code is a `O(ab)`.
 
 ---
 

@@ -4,11 +4,11 @@
 
 ## About
 
-> Please notice that I don't claim to own any of these infomation.
+*Please notice that I don't claim to own any of these infomation.*
 
 This repository is mainly for myself to study in Java. Maybe this would help other people to study as well.
 
-> Please notice that not everything vocabulary terms will be on here.
+*Please notice that not everything vocabulary terms will be on here.*
 
 In the future, I might have a website that go over everything about Java, include its definition.
 
@@ -17,6 +17,8 @@ In the future, I might have a website that go over everything about Java, includ
 > Most interviewrs won't ask about specific algorithms for binary tree balancing or other complex algorithms. Frankly, being several years out of school, they probably don't remember these algorithms either.
 >
 > You're usually only expect to know the basic.
+> 
+> - *Cracking the Coding Interview*
 
 These are must-have knowledge.
 
@@ -72,10 +74,6 @@ Make sure that you understand how to use and implement them, and where applicabl
         - [](.md) : 
 
     * __Concepts__ :
-
-        - [Big O Notation](foundations/algorithms/bigO-notation.md) : go over Big O notations
-
-            - [Big O Exercises](foundations/algorithms/bigO-exercises.md) : practice understanding of algorithm
         
         - [Bit Manipulation](.md) :
 
@@ -84,6 +82,10 @@ Make sure that you understand how to use and implement them, and where applicabl
         - [Recursion](.md) :
 
         - [Dynamic Programming](.md) :
+
+        - [Big O Notation](foundations/concepts/bigO-notation.md) : language and metric that use to describe the efficiency of algorithms
+
+            - [Big O Exercises](foundations/concepts/bigO-exercises.md) : practice your understanding of Big O thoroughly to jugde whether your algorithm is getting faster or slower. **Must master this concept*.
     
     * __Vocabulary__ :
 

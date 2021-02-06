@@ -16,6 +16,14 @@ The processing will depend on the nature of the input and input size.
 
 ---
 
+For further resources to learn about Big O Notation
+
+- Take a look at [Coursera - Algorithms Specialization](https://www.coursera.org/specializations/algorithms)
+
+- Cheat sheet for Big O can be find at [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
+
+---
+
 When analyze the algorithm, we also analyze how many times the principal acitivity of the algorithm is being performed. Then count the number of comparisons.
 
 ## 1. Worst Case:
@@ -50,10 +58,25 @@ We often speak of "extra" memory needed, not counting the memory needed to store
 
 ---
 
+## Big O, Little O, Omega & Theta
+
 The following 3 asymptotic notations are mostly used to represent time complexity of algorithms.
-1) Θ Notation (Theta notation)
-2) Big O Notation
-3) Ω Notation (Omega notation)
+
+__1) Θ Notation (Theta notation)__ : describes the exact bound of the complexity.
+
+“`f(n)` is `Θ(g(n))`” if `f(n)` is `O(g(n))` and `f(n)` is `Ω(g(n))`
+ 
+__2) Big O Notation__ : describes the upper bound of the complexity.
+
+"`f(n)` is `O(g(n))`" if for some constants `c` and `N₀`, `f(N) ≤ cg(N)` for all `N > N₀`
+
+__3) Ω Notation (Omega notation)__ : describes the lower bound of the complexity.
+
+“`f(n)` is `Ω(g(n))`” if for some constants `c` and `N₀`, `f(N) ≥ cg(N)` for all `N > N₀`
+
+__4) Little o__ : describes the upper bound excluding the exact bound.
+ 
+“`f(n)` is `o(g(n))`” if `f(n)` is `O(g(n))` and `f(n)` is not `Θ(g(n))`
 
 --- 
 
@@ -73,10 +96,10 @@ The worst-case scenario is known as the `upper bound`. The best case scenario is
 
 `O(1)` means that the algorithm takes the same number of steps to execute regardless of how much data is passed in. This is why it is called *constant time*.
 
-![Big O(1) - Constant](img/BigO_1-constant.png "Big O(1) - Constant")
+![Big O(1) - Constant](https://miro.medium.com/max/506/1*MH3BmdZKRuqHyLNnaI9eRg.png "Big O(1) - Constant")
 
 ```java
-function boolean IsFirstElementNull(IList<string> elements) {
+boolean IsFirstElementNull(IList<string> elements) {
 	return elements[0] == null;
 }
 ```
@@ -88,7 +111,7 @@ __Approach :__ Since I know `Joe` has my bag, I will directly ask him to give it
 
 ```java
 // if I know the persons name, I have to take only one step to check
-function boolean get_bag(String name) {
+boolean get_bag(String name) {
 	return data[name];
 }
 
@@ -119,7 +142,7 @@ __Explaination :__
 
 `O(n)` describes the algorithm that will take as many steps as there are elements of data such as iterating through an array; as the array increase in `n` size, an `O(n)` algorithm will increase by `n` steps. This is why it is *linear*.
  
-![Big O(n) - Linear](img/BigO_n-linear.png "Big O(n) - Linear")
+![Big O(n) - Linear](https://miro.medium.com/max/506/1*onjErRnvJBpEfFbTdFjw2Q.png "Big O(n) - Linear")
 
 ```java
 foreach (orange in oranges) {
@@ -134,7 +157,7 @@ __Approach :__ Have to open each orange individually in the basket to check for 
 __Worst-Case Scenario:__ have to ask `n` questions
 
 ```java
-function string search_for_bag(data) {
+string search_for_bag(data) {
 	found = false;
 
 	for i,name in enumerate(data){
@@ -175,7 +198,7 @@ The example below also demonstrates how Big O favours the worst-case performance
 
 It is generally quite slow: if input array has 1 element, it will do 1 operation; if it has 10 element, it will do 100 operations.
 
-![Big O(n^2) - Quadratic](img/BigO_n_square-quadratic.png "Big O(n^2) - Quadratic")
+![Big O(n^2) - Quadratic](https://miro.medium.com/max/506/1*h34O9norWzUHK2hmoRgn5g.png "Big O(n^2) - Quadratic")
 
 ```java
 for (var outer = 0; outer < elements.Count; outer++) {
@@ -195,7 +218,7 @@ __Approach:__ I will start questioning each student individually and ask him abo
 __Worst-Cast Scenario:__ In the worst case scenario, I will have to ask n^2 questions, questioning each student about other as well.
 
 ```java
-function string search_bag(data) {
+string search_bag(data) {
 	int n = data.length();
 
 	for(int i = 0; i < n; i++) {
@@ -246,7 +269,7 @@ __Scalability:__ poor.
 The growth curve of an O(2N) function is exponential - starting off very shallow, then rising meteorically. An example of an O(2N) function is the recursive calculation of Fibonacci numbers:
 
 ```java
-function int Fibonacci(int number) {
+int Fibonacci(int number) {
 	if (number <= 1) return number;
 	return Fibonacci(number - 2) + Fibonacci(number - 1);
 }
@@ -268,7 +291,7 @@ __Example__: Looking for people in phone book is `O(log n)` as you don't need to
 
 3. Divide the remainder in half again, repeat steps 2 and 3 until we find our name.
 
-![Big O(log n) - Logarithmic](img/BigO_log_n-logarithmic.png "Big O(log n) - Logarithmic")
+![Big O(log n) - Logarithmic](https://miro.medium.com/max/506/1*cIQNNJwW-LF8DS1QJ0q9UA.png "Big O(log n) - Logarithmic")
 
 __Scenario:__ All students know who has my bag but will only tell me if I guessed the right name.
 
@@ -277,7 +300,7 @@ __Approach:__ I will divide the class in half, then ask: "Is my bag on the left 
 __Worst-case Scenario:__ In the worst case, I will have to ask `log n` questions.
 
 ```java
-function boolean binary_bag_search(data, target, low = 0, high = null) {
+boolean binary_bag_search(data, target, low = 0, high = null) {
 	
 	if (high == null) {
 		high = data.length() - 1;
@@ -324,12 +347,17 @@ __Explaination:__
 
 __Examples__: Merge sort - it divides the input arrays in two halves, calls itself for each one and then merges the two sorted halves.
 
-__Scalability__: Average.
+__Scalability__: Average. Rate of growth of an algorithm that performs better than `O(n^2)` but not as well as `O(n)`.
 
 ```java
+for (int i = 1; i <= n; i++){
+    for(int j = 1; j < n; j = j * 2) {
+        System.out.println("Hey - I'm busy looking at: " + i + " and " + j);
+    }
+}
 ```
 
-__Scenario:__ 
+__Scenario:__ if the `n` is 8, then this algorithm will run `8 * log(8) = 8 * 3` = `24` times. Whether we have strict inequality or not in the for loop is irrelevant for the sake of a Big O Notation
 
 __Approach:__
 
@@ -337,7 +365,7 @@ __Worst-case Scenario:__
 
 ---
 
-# O(n!) - Factorial
+## O(n!) - Factorial
 
 > an algorithm has a run time proportional to the factorial of the input size:
 
@@ -350,16 +378,22 @@ __Examples__: Merge sort - it divides the input arrays in two halves, calls itse
 __Scalability__: Average.
 
 ```java
-
+for (int i = 1; i <= factorial(n); i++){
+    System.out.println("Hey - I'm busy looking at: " + i);
+}
 ```
 
-__Scenario:__ 
+__Scenario:__  A classic example of this is solving the traveling salesman problem using a brute-force approach to solve it. Where factorial(n) simply calculates n!. If `n is 8`, this algorithm will run `8!` = `40320` time
 
 __Approach:__
 
 __Worst-case Scenario:__ 
 
 ---
+
+## Growth Hierarchy
+
+![Big O Complexity Classes](https://miro.medium.com/max/506/1*qpw9Hil7AOfZoMT5EWWcJw.png "Big O Complexity Classes")
 
 __Source:__
 
@@ -373,6 +407,8 @@ __Source:__
 
 - [codeburst.io](https://codeburst.io/the-ultimate-beginners-guide-to-analysis-of-algorithm-b8d32aa909c5)
 
-- [jared nielsen](https://jarednielsen.com/big-o-factorial-time-complexity/)
+- [jared nielsen - Big O(n!)](https://jarednielsen.com/big-o-factorial-time-complexity/)
+
+- [jared nielsen - Big O(n log n](https://jarednielsen.com/big-o-log-linear-time-complexity/)
 
 - [free code camp](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
