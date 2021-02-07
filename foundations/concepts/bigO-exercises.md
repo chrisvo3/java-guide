@@ -322,50 +322,147 @@ Because nothing is change compare the last question, and the loop through `1000`
 What is the runtime for this strange code below?
 
 ```java
+void reverse(int[] array) {
+	for (int i = 0; i < array.length / 2; i++) {
+		int other = array.length - i - 1;
+		int temp = array[i];
+		array[i] = array[other];
+		array[other] = temp;
+	}
+}
 ```
 
 #### Solution
 
+This algorithm is runs in `O(n)` time.
+
 ### Explaination
+
+The fact that this goes through half of the array (in terms of iterations) does not impact the big O time.
 
 ---
 
 ### Question 7
 
-What is the runtime for this strange code below?
+Which of the following are equivalent to `O(n)`? Why?
 
-```java
-```
+* `O(n + p)`, where `p < (n/2)`
+
+* `O(2n)`
+
+* `O(n + log n)`
+
+* `O(n + m)`
 
 #### Solution
 
+All but the last one are equivalent to `O(n)`.
+
 ### Explaination
+
+* If `O(n + p)`, then we know that `n` is the dominant term, and `p` is the non-dominant term. Therefore, we can drop the `O(p)`, and that we have `O(n)`
+
+* `O(2n)` is `O(n)` since we drop the constant `2`. There for, we have `O(n)`.
+
+* `O(n)` dominates `O(log n)`, so we can drop the `O(log n)`. There for, we have `O(n)`.
+
+* There is no established relationship between `n` and `m`, so we have to keep both variables in there.
 
 ---
 
 ### Question 8
 
-What is the runtime for this strange code below?
-
-```java
-```
+Suppose we have algorithm that took in an array of strings, sorted each string, and then sorted the full array. What would the runtime be?
 
 #### Solution
 
+The runtime is `O(a*s(log a + log s))`.
+
 ### Explaination
+
+Many candidates will reason the following: sorting each string is `O(n log n)` and we have to do this ofr each string. So that's `O(n*n log n)`. We also have to sort this array, so that's an additional `O(n log n)` work. Therefore, the total runtime is `O(n^2 log n + n log n)` which is just `O(n^2 log n)`. 
+
+This is **completely in correct**. Did you catch the error?
+
+The problem is that we use `n` in two different ways. In one case, it's the `length` of the `string` (which `string`?). And in another case, it's the `length` of the `array`.
+
+You can prevent this error by either not using the variable `n` at all, or by using only it when there is no ambiguity as to what `n` could represent.
+
+In fact, I wouldn't even use `a` and `b` here, or `m` and `n`. It's too easy to forget which is which and mix them up. An `O(a^2)` runtime is compeltely different from `O(a*b)` runtime.
+
+Let's have new terms and use names that are logical.
+
+* Let's `s` be the length of the longest `string`.
+
+* Let's `a` be the length of the `array`.
+
+Now, we can work through this in aprts:
+
+* Sorting each string is `O(a*s log a)` 
+
+* We have to do this for every `string` (and there are a `strings`), so that's `O(a*s log s)`.
+
+* Now we have to sort all the `strings`. There are a `strings`, so you may be inclined to say that this takes `O(a log a)` times. You should also take into account that you need to compare the strings.
+
+* Each `string` comparison takes `O(s)` time. There are `O(a log a)` comparisons, therefore this will take `O(a*s log a)` time.
+
+If you add up these two parts, you get `O(a*s(log a + log s)).
 
 ---
 
 ### Question 9
 
-What is the runtime for this strange code below?
+The following simple code sums the values of all the nodes in a balanced binary search tree. What is its runtime?
 
 ```java
+int sum(Node node) {
+	if (node == null) {
+		return 0;
+	}
+	return sum(node.left) + node.value + sum(node.right);
+}
 ```
 
 #### Solution
 
+
+
 ### Explaination
+
+Just because it's a binary serach tree doesn't mean that there is a log in it.
+
+The most straightforward way is to think about what this means. This code touches each node in the tree once and does a constant time amount of work with each "touch" (excluding the recursive calls).
+
+Therefor, the runtime will be linear in terms of the number of nodes. If there are `N` nodes, then the runtimes is `O(n)`.
+
+*Recursive Pattern*
+
+The pattern for the runtime of recursive branches is typically `O(branches^depth)`. There are two branches at each call, so we're looking at `O(2^depth)`.
+
+At this point, many people might assume that something went wrong since we have an exponential algorithm - that something in our logi is flawed or that we have inadvertently created an exponential time algorithm (yikes!).
+
+The second statement is correct. We do have an exponential time algorithm, but it's not as bad as one might think. Consider what variable it's exponential with respect to.
+
+*What is dept?*
+
+The tree is a balanced binary tree. Therefore, if there are `n` total nodes, then depth is roughly `log n`.
+
+By the equation about, we get `O(2 ^ log n)`.
+
+Recall what `log(2)` means: `2^p = q -> log(2) q = p`
+
+What is `2^log n`? There is a relationship between `2` and `log`, so we should be able to simplify this.
+
+Let `p = 2^log n`. By the definition of `log(2)`, we can write this as `log(2) p = log(2) n`. This means that `p = n`.
+
+```
+let        p = 2^log n
+--> log(2) p = log(2) n
+-->        p = n
+-->  2^log n = n
+```
+
+Therefore, the runtime of this code is `O(n)` where `n` is the number of nodes.
 
 ---
 
