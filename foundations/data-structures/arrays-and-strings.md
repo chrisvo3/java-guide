@@ -16,6 +16,8 @@ Common implementations by use array of linked lists and a hash code function. To
 
 3. At this index, there is a linked list of keys and values. Store the key and value in this index. Use linked list because of collisions: have two different keys with same hash code, or two different hash codes that map to the same index.
 
+**Hash Method**
+
 Define a hashing method to compute the hash code of the key of the data item.
 
 ```java
@@ -26,11 +28,13 @@ int hashCode(int key){
 
 **Following are the basic primary operations of a hash table.**
 
-**Search** − Searches an element in a hash table.
+Search − *Searches an element in a hash table.*
 
-**Insert** − inserts an element in a hash table.
+Insert − *inserts an element in a hash table.*
 
-**delete** − Deletes an element from a hash table.
+delete − *Deletes an element from a hash table.*
+
+**Data Item**
 
 Define a data item having some data and key, based on which the search is to be conducted in a hash table.
 
@@ -42,4 +46,7 @@ construct DataItem {
 ```
 
 ## ArrayList & Resizable Arrays
+
+In some programming language, arrays are automatically resizable. But with Java, arrays are fixed length. The size is defined when you create the array.
+
 
