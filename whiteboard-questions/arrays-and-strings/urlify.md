@@ -9,3 +9,9 @@ Write a method to replace all spaces ina string with `'%20'`. You may assume tah
 Input: `"Mr John Smith   `, 13
 
 Output: `"Mr%20John%20Smith"`
+
+## Hint
+
+It's often easiest to modify strings by going from the end of the string to the beginning.
+
+You  might find you need to know the number of spaces. Can you just count them?
