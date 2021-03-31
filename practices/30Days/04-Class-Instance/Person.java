@@ -1,5 +1,3 @@
-// package whiteboard-questions.30days.04-Class-Instance;
-
 import java.io.*;
 import java.util.*;
 
